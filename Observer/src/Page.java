@@ -8,48 +8,50 @@ public class Page implements PageInterface{
 
     @Override
     public void setPageName(String name) {
-
+        name = pageName;
     }
 
     @Override
     public String getPageName() {
-        return null;
+        return pageName;
     }
 
     @Override
     public ArrayList<Post> getPosts() {
-        return null;
+        return return posts;
     }
 
     @Override
     public ArrayList<FollowerInterface> getFollowers() {
-        return null;
+        return followers;
     }
 
     @Override
     public void follow(FollowerInterface f) {
-
+        followers.add(f);
     }
 
     @Override
     public void unfollow(FollowerInterface f) {
-
+        followers.remove(f);
     }
 
     @Override
     public void notifyFollowers() {
-        //TODO notify method for observer class
+        for(Follower follower : followers) {
+            follower.update("New Post Added!");
+        }
         //this method calls update for each follower
     }
 
     @Override
     public void addPost(Post p) {
-        //TODO add post and notify followers when new post is added
-
+        posts.add(p);
+        notifyFollowers();
     }
 
     @Override
     public void removePost(Post p) {
-
+        posts.remove(p);
     }
 }
