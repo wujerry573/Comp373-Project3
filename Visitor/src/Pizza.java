@@ -1,9 +1,9 @@
 public class Pizza implements PizzaIngredient{
 
-    Pizza[] pizzas;
+    PizzaIngredient[] pizzas;
 
     public Pizza() {
-        pizzas = new Pizza[] {new Cheese(), new Sauce(), new Sausage(), new Dough()};
+        pizzas = new PizzaIngredient[] {new Cheese(),new Dough(), new Sauce(), new Sausage() };
     }
 
     @Override
