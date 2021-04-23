@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Follower implements FollowerInterface{
     private String name;
-    private ArrayList<Page> followedPages;
+    private ArrayList<PageInterface> followedPages;
 
     @Override
     public void setName(String name) {
