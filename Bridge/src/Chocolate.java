@@ -4,7 +4,9 @@ public class Chocolate extends Cake {
     }
     @Override
     public void addChoice(){
+        //print out chocolate cake text
         System.out.println("Chocolate cake size: ");
+        //print out choice
         choice.addChoice();
     }
 }
