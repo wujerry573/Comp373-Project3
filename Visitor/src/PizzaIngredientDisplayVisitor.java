@@ -1,5 +1,11 @@
 public class PizzaIngredientDisplayVisitor implements PizzaIngredientVisitor{
 
+
+    @Override
+    public void visit(Pizza pizza){
+        System.out.println("Pizza");
+    }
+
     @Override
     public void visit(Cheese cheese){
         System.out.println("Cheese");
