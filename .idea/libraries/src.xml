@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Bridge/src" />
+      <root url="file://$PROJECT_DIR$/Observer/src" />
+      <root url="file://$PROJECT_DIR$/Visitor/src" />
+    </SOURCES>
+  </library>
+</component>
