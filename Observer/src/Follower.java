@@ -5,6 +5,10 @@ public class Follower implements FollowerInterface{
     private String name;
     private ArrayList<PageInterface> followedPages;
 
+    public Follower(String name) {
+        this.name = name;
+    }
+
     @Override
     public void setName(String name) {
         this.name = name;

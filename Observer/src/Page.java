@@ -1,10 +1,14 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Page implements PageInterface{
     private String pageName;
-    private ArrayList<Post> posts;
-    private ArrayList<Follower> followers;
+    private ArrayList<Post> posts = new ArrayList<Post>();
+    private ArrayList<FollowerInterface> followers = new ArrayList<FollowerInterface>();
 
+    public Page(String pageName) {
+        this.pageName = pageName;
+    }
 
     @Override
     public void setPageName(String name) {
@@ -18,7 +22,7 @@ public class Page implements PageInterface{
 
     @Override
     public ArrayList<Post> getPosts() {
-        return return posts;
+        return posts;
     }
 
     @Override
@@ -38,7 +42,7 @@ public class Page implements PageInterface{
 
     @Override
     public void notifyFollowers() {
-        for(Follower follower : followers) {
+        for(FollowerInterface follower : followers) {
             follower.update("New Post Added!");
         }
         //this method calls update for each follower

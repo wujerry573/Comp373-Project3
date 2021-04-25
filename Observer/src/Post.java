@@ -3,6 +3,10 @@ public class Post {
     private String content;
     private String datePublished;
 
+    public Post(String name) {
+        this.name = name;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
