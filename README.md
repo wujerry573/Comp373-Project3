@@ -12,3 +12,11 @@ Observer Example: Website updates for followers
 
 Visitor Example: Displaying various Pizza ingredients
 
+Instructions:
+1. Download the file or import through version control
+2. Enter the pattern folder of your choice
+3. Next, enter the src folder
+4. To run pattern:
+	- Bridge: CakeTest.java
+	- Observer: BridgeWebsite.java
+	- Visitor: PizzaTest.java
