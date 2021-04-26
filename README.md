@@ -13,6 +13,8 @@ Observer Example: Website updates for followers
 - Solution: Using the observer pattern, when a new post is added to the webpage, all followers of the page will be notified. 
 
 Visitor Example: Displaying various Pizza ingredients
+- Problem: Pizza is a food that can accept various toppings and ingredients but what if we want to include new toppings on the menu or make changes to the old toppings?
+- Solution: Utilizing the Visitor Pattern, any changes in logic of operation would only require changing the visitor implementation rather than changing all toppings/ingredients. Adding new toppings and ingredients would be simple as it only requires change in the visitor interface while implementation and already existing classes will not be affected.
 
 Instructions:
 1. Download the file or import through version control
